@@ -1,0 +1,33 @@
+.navbar-brand {
+  text-transform: uppercase;
+}
+.spaced-bottom-lg {
+  margin-bottom: 20px;
+}
+.wrapper {
+  padding: 40px 0;
+}
+.alternate-bgd {
+  background-color: #eaeaea;
+}
+#introduction {
+  background: url('http://lorempixel.com/1600/800/city/') no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+}
+#footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+.description {
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.mugshot {
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.social {
+  margin-right: 15px;
+}

@@ -1,0 +1,39 @@
+.spaced-bottom-lg {
+  margin-bottom: 20px;
+}
+.spaced-bottom-md {
+  margin-bottom: 15px;
+}
+.description {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.clock {
+  text-align: center;
+}
+.time {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  line-height: 1;
+}
+#pomodoroTime {
+  font-size: 5em;
+  margin-top: 0;
+}
+#pomodoroStatus {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.controls {
+  text-align: center;
+  margin-top: 10px;
+}
+.progress-bar {
+  float: right;
+}
+.pomodoro {
+  background: #eaeaea;
+  padding: 20px;
+}
