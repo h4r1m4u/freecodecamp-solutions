@@ -8,7 +8,7 @@ function unite(arr1, arr2, arr3) {
     return a.concat(b);
   }, []);
   
-  var result = []
+  var result = [];
       
   flattened.forEach(function(element) {
     if (result.indexOf(element) == -1) {
