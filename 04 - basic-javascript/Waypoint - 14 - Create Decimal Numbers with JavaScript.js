@@ -1,9 +1,5 @@
-// var ourDecimal = 5.7;
-// Create a number with a decimal point here called myDecimal
+var ourDecimal = 5.7;
 
-var myDecimal = 1.4;
+// Only change code below this line
+var myDecimal = 2.4;
 
-// Only change code above this line.
-// We use this function to show you the value of your variable in your output box.
-// You'll learn about functions soon.
-(function(){if(typeof(myDecimal) !== "undefined"){return myDecimal;}})();

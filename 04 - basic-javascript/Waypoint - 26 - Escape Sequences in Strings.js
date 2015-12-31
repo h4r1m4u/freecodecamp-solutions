@@ -1,0 +1,1 @@
+var myStr = "\\ \t \t \r \n"; // Change this line
