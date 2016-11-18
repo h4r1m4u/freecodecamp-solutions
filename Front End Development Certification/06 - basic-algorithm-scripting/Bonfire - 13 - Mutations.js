@@ -1,17 +1,13 @@
 function mutation(arr) {
-  var first = arr[0].toLowerCase().split('');
-  var second = arr[1].toLowerCase().split('');
-  var result = true;
-  var i = 0;
-  // Iterate over second and check if the element is in first. 
-  // If not, set result to false and quit the while loop.
-  while (result === true && i < second.length) {
-    if (first.indexOf(second[i]) === -1) {
-      result = false;
-    }
-    i++;
-  }
-  return result;
+  //convert to lowercase
+  var str1 = arr[0].toLowerCase(), 
+      str2 = arr[1].toLowerCase();
+  
+  //splitting into an array makes it easier to compare
+  return str2.split("").every(function(val) {
+    //Array.prototype.every() returns true if all values in the array pass the test in the provided function 
+    return str1.indexOf(val) !== -1;
+  });
 }
 
 mutation(["hello", "hey"], "");
