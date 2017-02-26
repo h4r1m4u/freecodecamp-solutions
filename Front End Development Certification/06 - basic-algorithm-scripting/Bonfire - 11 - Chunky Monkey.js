@@ -1,12 +1,17 @@
+
 function chunkArrayInGroups(arr, size) {
-  // Break it up
-  var newArr = [], i = 0;
-  
+
+  var result = [], 
+      i = 0;
+
+  // Iterate over the array and break it up into slices
+  // based on the value of the size argument. Push the slices 
+  // into the result array.
   while(i < arr.length) {
-    newArr.push(arr.slice(i, i += size));
+    result.push(arr.slice(i, i += size));
   }
   
-  return newArr;
+  return result;  
 }
 
-chunk(["a", "b", "c", "d"], 2, "");
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
