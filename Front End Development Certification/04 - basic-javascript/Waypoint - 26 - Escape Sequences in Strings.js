@@ -1,1 +1,1 @@
-var myStr = "\\ \t \t \r \n"; // Change this line
+var myStr="FirstLine\n\\SecondLine\\\rThirdLine"; // Change this line
