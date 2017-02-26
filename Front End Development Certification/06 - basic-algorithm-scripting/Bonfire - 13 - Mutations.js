@@ -1,17 +1,17 @@
 function mutation(arr) {
-  var first = arr[0].toLowerCase().split('');
-  var second = arr[1].toLowerCase().split('');
-  var result = true;
-  var i = 0;
-  // Iterate over second and check if the element is in first. 
-  // If not, set result to false and quit the while loop.
-  while (result === true && i < second.length) {
-    if (first.indexOf(second[i]) === -1) {
-      result = false;
-    }
-    i++;
-  }
-  return result;
+  // Convert the strings to lowercase
+  var first = arr[0].toLowerCase(), 
+      second = arr[1].toLowerCase();
+  
+  // Split the second string into individual characters stored in an array
+  // and using the every() method, test whether each of them is also 
+  // contained in the first string
+  return second.split('').every(function(val) {    
+    // Similar to arrays, string has the indexOf() method which returns 
+    // the index of the first occurence of the value in a given string
+    // (or -1 if the value is not found)
+    return first.indexOf(val) !== -1;  
+  });
 }
 
-mutation(["hello", "hey"], "");
+mutation(["hello", "hey"]);
