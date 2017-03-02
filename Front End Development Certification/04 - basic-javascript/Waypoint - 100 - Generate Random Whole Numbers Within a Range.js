@@ -1,10 +1,10 @@
 // Example
-function ourFunction(ourMin, ourMax) {
+function ourRandomRange(ourMin, ourMax) {
 
   return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
 }
 
-ourFunction(1, 9);
+ourRandomRange(1, 9);
 
 // Only change code below this line.
 
