@@ -1,12 +1,12 @@
-function where(arr, num) {
-  // Find my place in this sorted array.
-  // Add num into arr
-  arr.push(num);
-  // Sort arr in ascending order
+function getIndexToIns(arr, num) {
   arr.sort(function(a, b) {
     return a - b;
-  })
-  return arr.indexOf(num);
-}
+  });
 
-where([40, 60], 50, "");
+  for (var a = 0; a < arr.length; a++) {
+    if (arr[a] >= num)
+      return a;
+  }
+
+  return arr.length;
+}
