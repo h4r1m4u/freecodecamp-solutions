@@ -20,7 +20,7 @@ function firstVowelIndex(str) {
   return index;
 }
 
-function translate(str) {
+function translatePigLatin(str) {
   if (isVowel(str[0])) {
     return str + 'way';
   } else {
@@ -28,4 +28,4 @@ function translate(str) {
   }
 }
 
-translate("consonant");
+translatePigLatin("consonant");
