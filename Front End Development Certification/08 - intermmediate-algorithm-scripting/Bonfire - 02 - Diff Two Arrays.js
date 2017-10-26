@@ -1,17 +1,16 @@
-function diff(arr1, arr2) {
+function diffArray(arr1, arr2) {
   var newArr = [];
-  for (var i = 0; i <= arr1.length - 1; i++) {
-    if ((arr2.indexOf(arr1[i]) < 0) && (newArr.indexOf(arr1[i]) < 0)) {
-      newArr.push(arr1[i]);
+  function onlyInFirst(first, second) {
+  // Looping through an array to find elements that don't exist in another array
+    for (var i=0;i<first.length;i++) {
+      if (second.indexOf(first[i]) === -1) {
+        // Pushing the elements unique to first to newArr
+        newArr.push(first[i]);
+      }
     }
   }
-  for (var j = 0; j <= arr2.length - 1; j++) {
-    if ((arr1.indexOf(arr2[j]) < 0) && (newArr.indexOf(arr2[j]) < 0)) {
-      newArr.push(arr2[j]);
-    }
-  }  
-  // Same, same; but different.
+  onlyInFirst(arr1, arr2);
+  onlyInFirst(arr2, arr1);
   return newArr;
 }
-
-diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
