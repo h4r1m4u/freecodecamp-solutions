@@ -1,4 +1,4 @@
-function where(collection, source) {
+function whatIsInAName(collection, source) {
   var arr = [];
   
   // filter returns array with elements from the original array
@@ -23,4 +23,4 @@ function where(collection, source) {
   return arr;
 }
 
-where([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
