@@ -3,29 +3,20 @@ function isVowel(char) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
   if (vowels.indexOf(char) != -1) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // returns the index position of a first vowel in a string
 function firstVowelIndex(str) {
-  var index;
-  for (var i = 0; i <= str.length - 1; i++) {
-    if (isVowel(str.charAt(i))) {
-      index = i;
-      break;
-    }
-  }
-  return index;
+  return str.split('').findIndex(isVowel);
 }
 
 function translatePigLatin(str) {
   if (isVowel(str[0])) {
     return str + 'way';
-  } else {
-    return str.slice(firstVowelIndex(str)) + str.slice(0, firstVowelIndex(str)) + 'ay';
   }
+  return str.slice(firstVowelIndex(str)) + str.slice(0, firstVowelIndex(str)) + 'ay';
 }
 
 translatePigLatin("consonant");
