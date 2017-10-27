@@ -1,4 +1,4 @@
-function diff(arr1, arr2) {
+function diffArray(arr1, arr2) {
   var newArr = [];
   for (var i = 0; i <= arr1.length - 1; i++) {
     if ((arr2.indexOf(arr1[i]) < 0) && (newArr.indexOf(arr1[i]) < 0)) {
@@ -14,4 +14,4 @@ function diff(arr1, arr2) {
   return newArr;
 }
 
-diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
