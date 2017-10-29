@@ -1,4 +1,4 @@
-function unite(arr1, arr2, arr3) {
+function uniteUnique(arr1, arr2, arr3) {
   
   // conver the arguments object into an array
   var args = Array.prototype.slice.call(arguments);
@@ -19,4 +19,4 @@ function unite(arr1, arr2, arr3) {
   return result;
 }
 
-unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
