@@ -1,4 +1,4 @@
-function boo(bool) {
+function booWho(bool) {
   // What is the new fad diet for ghost developers? The Boolean.
   if (typeof bool === 'boolean') {
     return true;
@@ -6,5 +6,4 @@ function boo(bool) {
     return false;
   }
 }
-
-boo(null);
+booWho(null);
