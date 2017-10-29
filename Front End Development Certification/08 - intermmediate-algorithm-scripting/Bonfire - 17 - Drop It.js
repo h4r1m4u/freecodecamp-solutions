@@ -1,12 +1,13 @@
-function drop(arr, func) {
-  // Drop them elements.
-  var result = [];
-  for (var i = 0; i <= arr.length - 1; i++) {
-    if (func(arr[i]) == true) {
-      result.push(arr[i]);
-    }
-  }
-  return result;
+function dropElements(arr, func) {
+ 	var no = []; 
+    var yes = [];
+ 	for (i = 0; i < arr.length; i++){
+ 		if (func(arr[i]) === false && no.includes(arr[i]) === false){
+ 			no.push(arr[i]);
+ 		} else {
+ 			yes.push(arr[i]);
+ 		}
+ 	}
+    return yes;
 }
-
-drop([1, 2, 3], function(n) {return n < 3; });
+dropElements([1, 2, 3], function(n) {return n < 3; });
