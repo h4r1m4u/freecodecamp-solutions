@@ -1,4 +1,4 @@
-function pair(str) {
+function pairElement(str) {
   var pairs = {
     'A': 'T',
     'T': 'A',
@@ -16,4 +16,4 @@ function pair(str) {
   return result;
 }
 
-pair("GCG");
+pairElement("GCG");
