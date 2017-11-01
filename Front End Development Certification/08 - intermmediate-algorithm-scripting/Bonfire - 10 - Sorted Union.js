@@ -1,9 +1,9 @@
 function uniteUnique(arr1, arr2, arr3) {
   
-  // conver the arguments object into an array
+  // Convert the arguments object into an array
   var args = Array.prototype.slice.call(arguments);
   
-  // join the argument arrays into one
+  // Join the argument arrays into one
   var flattened = args.reduce(function(a, b) {
     return a.concat(b);
   }, []);
