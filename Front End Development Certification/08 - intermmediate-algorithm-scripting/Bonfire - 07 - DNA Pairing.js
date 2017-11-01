@@ -4,7 +4,7 @@ function pair(str) {
     'T': 'A',
     'C': 'G',
     'G': 'C'
-  }
+  };
   
   var result = [];
   
