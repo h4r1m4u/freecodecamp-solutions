@@ -9,7 +9,7 @@ Just like freeCodeCamp, this repository is meant to be a learning resource assis
 
 Do the challenges on your own, write your own code that passes the tests, and consult this repository only if you truly have no idea how to pass an exercise or to check if there is perhaps a better, simpler or more efficient way of solving it. 
 
-Copying the solutions into the freeCodeCamp editor might let you cheat your way through the system, but it will help you become a better developer. The only person you will be cheating is yourself. 
+Copying the solutions into the freeCodeCamp editor might let you cheat your way through the system, but it will not help you become a better developer. The only person you will be cheating is yourself. 
 
 ## Pull Requests
 freeCodeCamp is a living project that develops and changes over time. I started this repository back in 2015 and I do not actively monitor or track the latest freeCodeCamp developments. As such, some of the solutions may be outdated or even irrelevant. The same goes for the file structure, exercise names, etc.
