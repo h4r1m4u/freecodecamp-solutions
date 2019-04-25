@@ -29,22 +29,18 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 
 // Only change code below this line
 function updateRecords(id, prop, value) {
-  //  first check if value empty delete the property
+  // No value is provided, delete property from the album
   if (!value) {
     delete collection[id][prop];
-    // different handling according to the existence or not of property tracks
-  } else if (prop !== "tracks") {
+  } else {
+    if (prop === "tracks") {
+      // If the album has a tracks property, add the value at the end. 
+      // Otherwise set it to an empty array first.
+      (collection[id][prop] = collection[id][prop] || []).push(value) ;      
+    } else {
+      // Property isn't tracks, just update its value
       collection[id][prop] = value;
-  } else if (prop === "tracks") {
-    // has already tracks, push
-    if (collection[id].tracks)
-      {
-        collection[id][prop].push(value)
-        // hasn't tracks. create an array and push
-      } else {
-        collection[id][prop] = [];
-        collection[id][prop].push(value);
-      }
+    }
   }
   
   return collection;
