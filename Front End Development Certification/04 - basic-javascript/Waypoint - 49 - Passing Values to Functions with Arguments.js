@@ -5,7 +5,7 @@ function ourFunction(a, b) {
 ourFunction(10, 5); // Outputs 5
 
 // Only change code below this line.
-function myFunction(a, b) {
+function functionWithArgs(a, b) {
   console.log(a + b);
 }
-myFunction(1, 2);
+functionWithArgs(1, 2);
