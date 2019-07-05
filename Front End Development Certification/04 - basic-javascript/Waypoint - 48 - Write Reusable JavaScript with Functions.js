@@ -7,8 +7,8 @@ ourFunction();
 
 // Only change code below this line
 
-function myFunction() {
+function reusableFunction() {
   console.log("Hi World");
 }
 
-myFunction();
+reusableFunction();
