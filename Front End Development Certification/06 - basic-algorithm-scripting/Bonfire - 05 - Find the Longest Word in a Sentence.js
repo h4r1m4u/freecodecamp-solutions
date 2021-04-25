@@ -1,4 +1,4 @@
-function findLongestWord(str) {
+function findLongestWordLength(str) {
   var words = str.split(' ');
   var longest = 0;
   
@@ -11,4 +11,4 @@ function findLongestWord(str) {
   return longest;
 }
 
-findLongestWord("The quick brown fox jumped over the lazy dog");
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
