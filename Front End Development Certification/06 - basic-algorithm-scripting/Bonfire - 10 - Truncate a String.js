@@ -1,12 +1,12 @@
 function truncateString(str, num) {
-  // Clear out that junk in your trunk
-  if (str.length > num && num <= 3) {
+  /* If the number of characters in the string
+   * is greater than the num parameter,
+   * then it will truncate the string */
+  if(str.length > num) {
     return str.slice(0, num) + '...';
+  } else {
+    return str;
   }
-  if (str.length > num) {
-    return str.slice(0, num - 3) + '...';
-  } 
-  return str;
 }
 
-truncate("A-tisket a-tasket A green and yellow basket", 11, "");
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
